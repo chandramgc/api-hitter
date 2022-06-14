@@ -3,7 +3,6 @@ import http.client
 import csv
 import json
 import base64
-import time
 
 def main():
     excuteRunbook()
@@ -63,7 +62,5 @@ class myDict(dict):
         self.setdefault(key, value) # if key exit do nothing
 
 if __name__ == "__main__":
-    start_time = time.time()
     main()
-    print(f'Process takes {time.time() - start_time} seconds')
 
