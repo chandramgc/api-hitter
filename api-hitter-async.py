@@ -35,7 +35,7 @@ async def excuteRunbook():
             responses = await asyncio.gather(*tasks)
             for response in responses:
                 row_count += 1
-                # print("response: " + str(row_count) + " - " + str(response))
+                # print("resp)
                 row = resp_stats[row_count]
                 expect_response = "200";
                 current_response = str(response)
