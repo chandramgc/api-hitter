@@ -1,0 +1,49 @@
+{
+  "type": "record",
+  "name": "User",
+  "namespace": "com.example",
+  "fields": [
+    {
+      "type": "string",
+      "name": "name"
+    },
+    {
+      "type": "int",
+      "name": "age"
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "email",
+      "default": null
+    },
+    {
+      "type": {
+        "type": "record",
+        "name": "Address",
+        "namespace": "com.example",
+        "fields": [
+          {
+            "type": "string",
+            "name": "street"
+          },
+          {
+            "type": "string",
+            "name": "city"
+          },
+          {
+            "type": "string",
+            "name": "state"
+          },
+          {
+            "type": "string",
+            "name": "zip"
+          }
+        ]
+      },
+      "name": "address"
+    }
+  ]
+}
